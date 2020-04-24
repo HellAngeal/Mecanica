@@ -1,36 +1,40 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class MoveByClick : MonoBehaviour
 {
-    public GameObject Esferita;
+    public GameObject Cubito;
     float FI;
     float FD;
     float FF;
+    public Text FDtext;
+    public Text FItext;
+    public Text FFtext;
     Rigidbody rb;
-    // Start is called before the first frame update
+
     void Start()
     {
-        rb = Esferita.GetComponent<Rigidbody>();
+        rb = Cubito.GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            FI += 5.0f;
-            rb.AddForce(new Vector3(FI*-1, 0, 0), ForceMode.Acceleration);
+            FF -= 0.5f;
+            FI -= 0.5f;
         }
         if (Input.GetMouseButtonDown(1))
         {
-            FD += 5.0f;
-            rb.AddForce(new Vector3(FD, 0, 0), ForceMode.Acceleration);
+            FF += 0.5f;
+            FD += 0.5f;
         }
-        Debug.Log("Fuerza izquierda: "+FI);
-        Debug.Log("Fuerza derecha: " + FD);
-        FF = FD - FI;
-        Debug.Log("Fuerza final: " +FF);
+        rb.AddForce(new Vector3(FF, 0, 0), ForceMode.Force);
+        FDtext.text = "Fuerza derecha: " + FD;
+        FItext.text = "Fuerza izquierda: " + FI;
+        FFtext.text = "Fuerza final: " + FF;
     }
 }
