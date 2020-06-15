@@ -8,6 +8,8 @@ TagManager:
   - Ball
   - Hielo
   - Pasto
+  - CampoDeFuerza
+  - ResetPoint
   layers:
   - Default
   - TransparentFX
@@ -17,7 +19,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - CampoDeFuerza
   - 
   - 
   - 
