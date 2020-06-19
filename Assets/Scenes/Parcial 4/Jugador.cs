@@ -11,7 +11,7 @@ public class Jugador : MonoBehaviour
 
     const float gravedad = 9.81f;
 
-
+    
     #region Friccion = u * N;
     public float coeficienteFriccion;
     public float Normal;
@@ -19,13 +19,18 @@ public class Jugador : MonoBehaviour
     #endregion
     // Start is called before the first frame update
 
+   
     // Update is called once per frame
     void Update()
     {
         Aceleracion(fuerza, masa,fuerzaFriccion);
         Debug.Log("Coeficiente Friccion: " + coeficienteFriccion + "FuerzaFriccion: " + fuerzaFriccion);
-    }
 
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Salto_TiroParabolico(fuerza,90f);
+        }
+    }
 
     //Deteccion de materiales para sacar los coeficiente
     private void OnCollisionEnter2D(Collision2D collision)
@@ -59,5 +64,15 @@ public class Jugador : MonoBehaviour
 
         Debug.Log("aceleracion: "+aceleracionF);
         transform.position += Vector3.right * aceleracionF * Time.deltaTime;
+    }
+
+    void Salto_TiroParabolico(float fuerza, float angulo)
+    {
+        float multiplicador = 5.0f;
+        float fuerzaSalto = ((fuerza - fuerzaFriccion) * Mathf.Sin(angulo)) * multiplicador;
+        Debug.Log("Fuerza Salto" + fuerzaSalto);
+
+        transform.position += Vector3.up * fuerzaSalto * Time.deltaTime;
+
     }
 }

@@ -350,6 +350,8 @@ GameObject:
   - component: {fileID: 23861391}
   - component: {fileID: 23861390}
   - component: {fileID: 23861389}
+  - component: {fileID: 23861392}
+  - component: {fileID: 23861393}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -422,6 +424,34 @@ Transform:
   m_Father: {fileID: 1217174227}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &23861392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23861388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78ec057f8c605334a820be9a4bb9a33d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!111 &23861393
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23861388}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: ee6c8dd4cd2f29541ae35689df4ae515, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &65569052
 GameObject:
   m_ObjectHideFlags: 0
@@ -3624,7 +3654,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &1238685037
 GameObject:
   m_ObjectHideFlags: 0
