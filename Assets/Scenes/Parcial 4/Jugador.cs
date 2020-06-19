@@ -11,7 +11,7 @@ public class Jugador : MonoBehaviour
 
     const float gravedad = 9.81f;
 
-
+    
     #region Friccion = u * N;
     public float coeficienteFriccion;
     public float Normal;
