@@ -23,5 +23,11 @@ public class JackInTheBox : MonoBehaviour
         dampening = k * displacement;
         acc += ((k / m) * displacement)-dampening;
         spring.localScale = new Vector3(spring.localScale.x, spring.localScale.y - acc, spring.localScale.z);
+        StartCoroutine(returnscale());
+    }
+    IEnumerator returnscale()
+    {
+        yield return new WaitForSeconds(.7f);
+        spring.localScale = new Vector3(0.4208475f, 0.7826136f, 0.4208475f);
     }
 }
