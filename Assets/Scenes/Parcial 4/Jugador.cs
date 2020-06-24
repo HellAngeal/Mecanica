@@ -73,7 +73,7 @@ public class Jugador : MonoBehaviour
                 coeficienteFriccion = 0.35f;
                 break;
             case "Arena":
-                coeficienteFriccion = 0.55f;
+                coeficienteFriccion = 0.25f;
                 break;
            
         }
