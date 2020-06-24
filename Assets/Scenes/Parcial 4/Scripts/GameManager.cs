@@ -20,6 +20,9 @@ public class GameManager : MonoBehaviour
                 center[x].charge += multiplier;
 
                 int randomNum = Random.Range(0, 10);
+
+                one[x].gameObject.SetActive(true);
+                two[x].gameObject.SetActive(true);
                 one[x].masa += multiplier;
                 two[x].masa += multiplier;
                 if (randomNum <= 5)

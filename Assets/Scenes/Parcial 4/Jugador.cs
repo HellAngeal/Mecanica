@@ -64,6 +64,7 @@ public class Jugador : MonoBehaviour
             coeficienteFriccion = 0.35f;
         }else if(collision.gameObject.CompareTag("Esferas"))
         {
+            collision.gameObject.SetActive(false);
             HP--;
             switch(HP)
             {
