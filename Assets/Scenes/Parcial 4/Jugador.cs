@@ -75,37 +75,39 @@ public class Jugador : MonoBehaviour
             case "Arena":
                 coeficienteFriccion = 0.55f;
                 break;
-            case "Esferas":
-                collision.gameObject.SetActive(false);
-                HP--;
-
-                if (HP < 0)
-                {
-                    SceneManager.LoadScene(3);
-                }
-
-                switch (HP)
-                {
-                    case 0:
-                        Heart.sprite = spritesHearth[3];
-                        break;
-                    case 1:
-                        Heart.sprite = spritesHearth[2];
-                        break;
-                    case 2:
-                        Heart.sprite = spritesHearth[1];
-                        break;
-                    case 3:
-                        Heart.sprite = spritesHearth[0];
-                        break;
-                }
-                break;
+           
         }
         if (collision.gameObject.layer == 9)
         {
             puedeSaltar = true;
         }
       
+        if(collision.gameObject.CompareTag("Esferas"))
+        {
+                collision.gameObject.SetActive(false);
+            HP--;
+
+            if (HP < 0)
+            {
+                SceneManager.LoadScene(3);
+            }
+
+            switch (HP)
+            {
+                case 0:
+                    Heart.sprite = spritesHearth[3];
+                    break;
+                case 1:
+                    Heart.sprite = spritesHearth[2];
+                    break;
+                case 2:
+                    Heart.sprite = spritesHearth[1];
+                    break;
+                case 3:
+                    Heart.sprite = spritesHearth[0];
+                    break;
+            }
+        }
   
         FuerzaFriccion(coeficienteFriccion, masa);
 

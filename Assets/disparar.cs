@@ -29,7 +29,7 @@ public class disparar : MonoBehaviour
     {
         if(drewsin.fuerza != 0)
         {
-            fuerzadisparo += (drewsin.fuerza * 0.07f);
+            fuerzadisparo += (drewsin.fuerza * 0.01f);
             balita.AddForce(Vector2.right * fuerzadisparo, ForceMode2D.Impulse);
         }
         if(!balita_Renderer.isVisible)
