@@ -11,6 +11,7 @@ TagManager:
   - CampoDeFuerza
   - ResetPoint
   - Esferas
+  - Arena
   layers:
   - Default
   - TransparentFX
