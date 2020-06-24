@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Jugador : MonoBehaviour
 {
     #region variables Aceleracion = F / M;
@@ -26,6 +26,11 @@ public class Jugador : MonoBehaviour
     bool puedeSaltar;
     // Update is called once per frame
 
+    public Sprite[] spritesHearth;
+    public Image Heart;
+    public int HP;
+
+
     private void Start()
     {
         rb = this.gameObject.GetComponent<Rigidbody2D>();
@@ -40,6 +45,7 @@ public class Jugador : MonoBehaviour
             Saltar();
             puedeSaltar = false;
         }
+
     }
 
     //Deteccion de materiales para sacar los coeficiente
@@ -56,6 +62,24 @@ public class Jugador : MonoBehaviour
         else if (collision.gameObject.CompareTag("Pasto"))
         {
             coeficienteFriccion = 0.35f;
+        }else if(collision.gameObject.CompareTag("Esferas"))
+        {
+            HP--;
+            switch(HP)
+            {
+                case 0:
+                    Heart.sprite = spritesHearth[3];
+                    break;
+                case 1:
+                    Heart.sprite = spritesHearth[2];
+                    break;
+                case 2:
+                    Heart.sprite = spritesHearth[1];
+                    break;
+                case 3:
+                    Heart.sprite = spritesHearth[0];
+                    break;
+            }
         }
         FuerzaFriccion(coeficienteFriccion, masa);
 
