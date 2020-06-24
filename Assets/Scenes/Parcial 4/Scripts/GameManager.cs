@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("Player"))
             {
-                collision.gameObject.transform.position = new Vector2(-6.77f, 0.008f);
+                collision.gameObject.transform.position = new Vector2(-6.77f, 0.251f);
                 center[x].charge += multiplier;
 
                 int randomNum = Random.Range(0, 10);
