@@ -31,6 +31,11 @@ public class Jugador : MonoBehaviour
     public Image Heart;
     public int HP;
 
+    public Image[] balitasImagenes;
+    [SerializeField] GameObject balitas;
+    public int contadorMunicion = 3;
+    
+
 
     private void Start()
     {
@@ -39,7 +44,7 @@ public class Jugador : MonoBehaviour
     void Update()
     {
         Aceleracion(fuerza, masa, fuerzaFriccion);
-        Debug.Log("Coeficiente Friccion: " + coeficienteFriccion + "FuerzaFriccion: " + fuerzaFriccion);
+       
 
         if (Input.GetKeyDown(KeyCode.Space) && puedeSaltar == true)
         {
@@ -47,6 +52,10 @@ public class Jugador : MonoBehaviour
             puedeSaltar = false;
         }
 
+        if(Input.GetKeyDown(KeyCode.P)&&contadorMunicion!=0)
+        {
+            Disparar();
+        }
 
      
     }
@@ -109,10 +118,19 @@ public class Jugador : MonoBehaviour
         fuerza -= fuerzaFriccion;
         float aceleracionF = fuerza / masa;
 
-        Debug.Log("aceleracion: " + aceleracionF);
+  
         transform.position += Vector3.right * aceleracionF * Time.deltaTime;
     }
 
+
+    void Disparar()
+    {
+        Vector3 balita= new Vector3(0.4f, 0,0);
+        Vector3 offset = transform.position + balita;
+        Quaternion facingPlayerX = Quaternion.LookRotation(Vector3.forward);
+        Instantiate(balitas, offset, facingPlayerX);
+        contadorMunicion -= 1;
+    }
     void Saltar()
     {
 

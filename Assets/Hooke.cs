@@ -36,7 +36,7 @@ public class Hooke : MonoBehaviour
         if (Jugador)
         {
             powerSlider.gameObject.SetActive(true);
-            Debug.Log("putoelKOKO");
+           
         }
         else if(Jugador!=true)
         {
