@@ -16,15 +16,16 @@ public class Hooke : MonoBehaviour
 
     // Update is called once per frame
 
-    float power;
+    float power=1.5f;
     public float maxPower = 10f;
     public Slider powerSlider;
+    public GameObject plataformita;
    
     bool Jugador;
     // Start is called before the first frame update
     void Start()
     {
-        powerSlider.minValue = 0f;
+        powerSlider.minValue = 0.0f;
         powerSlider.maxValue = maxPower;
         
     }
@@ -44,18 +45,18 @@ public class Hooke : MonoBehaviour
         powerSlider.value = power;
       
         
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.S))
         {
             if (power <= maxPower)
             {
-                power += 0.3f * Time.deltaTime;
+                power += 5f * Time.deltaTime;
             }
         }
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.S))
         {
             
-             X = Mathf.Abs(power);
-            Debug.Log(X);
+            X = Mathf.Abs(power);
+          
             
             LeyHooke(kConstante, X);
         }
@@ -72,6 +73,10 @@ public class Hooke : MonoBehaviour
     {
         Jugador = false;
         power = 0f;
+
+        gameObject.SetActive(false);
+        powerSlider.gameObject.SetActive(false);
+        plataformita.SetActive(false);
     }
 
 
@@ -80,8 +85,6 @@ public class Hooke : MonoBehaviour
     {
 
         fuerzaElastica = k * x;
-
-
         Drewsin.fuerza = fuerzaElastica;
     }
 
