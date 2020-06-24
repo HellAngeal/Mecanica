@@ -81,7 +81,7 @@ public class Jugador : MonoBehaviour
 
                 if (HP < 0)
                 {
-                    SceneManager.LoadScene(4);
+                    SceneManager.LoadScene(3);
                 }
 
                 switch (HP)
