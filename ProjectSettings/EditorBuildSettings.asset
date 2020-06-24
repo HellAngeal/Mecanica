@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Parcial 4/Scenes/MainMenu.unity
     guid: 707ca9b10260ddf4d9a124a8811ca328
+  - enabled: 1
+    path: Assets/Scenes/Parcial 4/Scenes/Lose.unity
+    guid: f3bbbd36591d3fe448074bb96871f638
   m_configObjects: {}

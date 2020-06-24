@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class Jugador : MonoBehaviour
 {
     #region variables Aceleracion = F / M;
@@ -46,6 +47,8 @@ public class Jugador : MonoBehaviour
             puedeSaltar = false;
         }
 
+
+     
     }
 
     //Deteccion de materiales para sacar los coeficiente
@@ -66,7 +69,13 @@ public class Jugador : MonoBehaviour
         {
             collision.gameObject.SetActive(false);
             HP--;
-            switch(HP)
+
+            if (HP < 0)
+            {
+                SceneManager.LoadScene(4);
+             }
+
+            switch (HP)
             {
                 case 0:
                     Heart.sprite = spritesHearth[3];

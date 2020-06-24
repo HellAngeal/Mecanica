@@ -9,5 +9,13 @@ public class SelectionLevel : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    public void Retry()
+    {
+        SceneManager.LoadScene(2);
+    }
 
+    public void GiveUp()
+    {
+        SceneManager.LoadScene(3);
+    }
 }
