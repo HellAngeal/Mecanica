@@ -1,0 +1,547 @@
+fileFormatVersion: 2
+guid: 2470bb34921045a4fae4bd5a7010311d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5650798471574222432
+    second: game-button-png-3-transparent_0
+  - first:
+      213: -2409342315938347795
+    second: game-button-png-3-transparent_1
+  - first:
+      213: 5177593791986550882
+    second: game-button-png-3-transparent_2
+  - first:
+      213: -3116213099206204800
+    second: game-button-png-3-transparent_3
+  - first:
+      213: 7421790056918261504
+    second: game-button-png-3-transparent_4
+  - first:
+      213: 4300441313855167541
+    second: game-button-png-3-transparent_5
+  - first:
+      213: 5933278058603969948
+    second: game-button-png-3-transparent_6
+  - first:
+      213: 8725887987384197555
+    second: game-button-png-3-transparent_7
+  - first:
+      213: 4048714668371039274
+    second: game-button-png-3-transparent_8
+  - first:
+      213: -3834684646481356435
+    second: game-button-png-3-transparent_9
+  - first:
+      213: -5378494724254204002
+    second: game-button-png-3-transparent_10
+  - first:
+      213: -8061203356798069011
+    second: game-button-png-3-transparent_11
+  - first:
+      213: -2511011060085030294
+    second: game-button-png-3-transparent_12
+  - first:
+      213: 4654402961922284108
+    second: game-button-png-3-transparent_13
+  - first:
+      213: 2838736289256304195
+    second: game-button-png-3-transparent_14
+  - first:
+      213: -5309521679391530269
+    second: game-button-png-3-transparent_15
+  - first:
+      213: 2697924876657650477
+    second: game-button-png-3-transparent_16
+  - first:
+      213: -4429923838200622000
+    second: game-button-png-3-transparent_17
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: game-button-png-3-transparent_0
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 450
+        width: 5
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a98f74bab45491b0800000000000000
+      internalID: -5650798471574222432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game-button-png-3-transparent_1
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 347
+        width: 114
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de48d2ccdeb409ed0800000000000000
+      internalID: -2409342315938347795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game-button-png-3-transparent_2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 352
+        width: 178
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26840aa2f128ad740800000000000000
+      internalID: 5177593791986550882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game-button-png-3-transparent_3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 254
+        width: 207
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082256952bcf0c4d0800000000000000
+      internalID: -3116213099206204800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game-button-png-3-transparent_4
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 349
+        width: 207
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f93240cbe7ff660800000000000000
+      internalID: 7421790056918261504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game-button-png-3-transparent_5
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 258
+        width: 178
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c50c9179c3eab30800000000000000
+      internalID: 4300441313855167541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game-button-png-3-transparent_6
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 232
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d75bc55fc375250800000000000000
+      internalID: 5933278058603969948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game-button-png-3-transparent_7
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 150
+        width: 177
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b122ed84e4981970800000000000000
+      internalID: 8725887987384197555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game-button-png-3-transparent_8
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 220
+        width: 43
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a245b253a8cef2830800000000000000
+      internalID: 4048714668371039274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game-button-png-3-transparent_9
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 129
+        width: 207
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6995dc81a678cac0800000000000000
+      internalID: -3834684646481356435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game-button-png-3-transparent_10
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 166
+        width: 4
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9ff3867b8fbb55b0800000000000000
+      internalID: -5378494724254204002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game-button-png-3-transparent_11
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 164
+        width: 4
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de65ddfc14ad02090800000000000000
+      internalID: -8061203356798069011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game-button-png-3-transparent_12
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 39
+        width: 113
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a620e88aeb8172dd0800000000000000
+      internalID: -2511011060085030294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game-button-png-3-transparent_13
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 144
+        width: 100
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a57e275d2c79040800000000000000
+      internalID: 4654402961922284108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game-button-png-3-transparent_14
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 38
+        width: 207
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ee1246d97356720800000000000000
+      internalID: 2838736289256304195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game-button-png-3-transparent_15
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 84
+        width: 4
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2e1a4e92ac056b0800000000000000
+      internalID: -5309521679391530269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game-button-png-3-transparent_16
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 55
+        width: 177
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b6edf8164f07520800000000000000
+      internalID: 2697924876657650477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game-button-png-3-transparent_17
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 83
+        width: 5
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054540a6dbfb582c0800000000000000
+      internalID: -4429923838200622000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: db819047635a0ed4cb618a915463b37c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
