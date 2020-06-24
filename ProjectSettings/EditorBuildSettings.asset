@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Parcial 1/ExamenAHHH.unity
     guid: 4383b15fb607d4949ab98555638ed3c4
+  - enabled: 1
+    path: Assets/Scenes/Parcial 4/Scenes/LevelSelection.unity
+    guid: 700c4dec5f8604a4784fb4480635d22d
+  - enabled: 1
+    path: Assets/Scenes/Parcial 4/Scenes/Level 2 Koko.unity
+    guid: 59e9a3986dab2114d87b41070941e7d5
+  - enabled: 1
+    path: Assets/Scenes/Parcial 4/Scenes/MainMenu.unity
+    guid: 707ca9b10260ddf4d9a124a8811ca328
   m_configObjects: {}
