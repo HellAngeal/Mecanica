@@ -49,7 +49,7 @@ public class Hooke : MonoBehaviour
         {
             if (power <= maxPower)
             {
-                power += 5f * Time.deltaTime;
+                power += 1f * Time.deltaTime;
             }
         }
         if (Input.GetKeyUp(KeyCode.S))
