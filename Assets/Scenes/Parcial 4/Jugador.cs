@@ -63,43 +63,50 @@ public class Jugador : MonoBehaviour
     //Deteccion de materiales para sacar los coeficiente
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
+        switch(collision.gameObject.tag)
+        {
+            case "Hielo":
+                coeficienteFriccion = 0.09f;
+                break;
+            case "Pasto":
+                coeficienteFriccion = 0.35f;
+                break;
+            case "Arena":
+                coeficienteFriccion = 0.55f;
+                break;
+            case "Esferas":
+                collision.gameObject.SetActive(false);
+                HP--;
+
+                if (HP < 0)
+                {
+                    SceneManager.LoadScene(4);
+                }
+
+                switch (HP)
+                {
+                    case 0:
+                        Heart.sprite = spritesHearth[3];
+                        break;
+                    case 1:
+                        Heart.sprite = spritesHearth[2];
+                        break;
+                    case 2:
+                        Heart.sprite = spritesHearth[1];
+                        break;
+                    case 3:
+                        Heart.sprite = spritesHearth[0];
+                        break;
+                }
+                break;
+        }
         if (collision.gameObject.layer == 9)
         {
             puedeSaltar = true;
         }
-        if (collision.gameObject.CompareTag("Hielo"))
-        {
-            coeficienteFriccion = 0.09f;
-        }
-        else if (collision.gameObject.CompareTag("Pasto"))
-        {
-            coeficienteFriccion = 0.35f;
-        }else if(collision.gameObject.CompareTag("Esferas"))
-        {
-            collision.gameObject.SetActive(false);
-            HP--;
-
-            if (HP < 0)
-            {
-                SceneManager.LoadScene(4);
-             }
-
-            switch (HP)
-            {
-                case 0:
-                    Heart.sprite = spritesHearth[3];
-                    break;
-                case 1:
-                    Heart.sprite = spritesHearth[2];
-                    break;
-                case 2:
-                    Heart.sprite = spritesHearth[1];
-                    break;
-                case 3:
-                    Heart.sprite = spritesHearth[0];
-                    break;
-            }
-        }
+      
+  
         FuerzaFriccion(coeficienteFriccion, masa);
 
     }
