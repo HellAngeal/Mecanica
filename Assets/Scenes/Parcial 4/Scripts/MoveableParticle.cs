@@ -14,6 +14,7 @@ public class MoveableParticle : ParticleWithCharge
     {
         UpdateColor();
         rigidBody = gameObject.AddComponent<Rigidbody2D>();
+        //rigidBody.gravityScale(0.0f);
         rigidBody.mass = masa;
         //rigidBody.useGravity = false;
     }

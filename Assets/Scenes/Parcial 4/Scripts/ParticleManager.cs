@@ -8,8 +8,27 @@ public class ParticleManager : MonoBehaviour
     List<MoveableParticle> moveableParticles;
     [SerializeField]
     public float cycleInterval;
-    float multiplier = 100f;
+    float multiplier = 10f;
+    MeshRenderer render;
+
     void Start()
+    {
+        render = GetComponent<MeshRenderer>();
+        if(render.isVisible)
+        {
+            GetParticles();
+            foreach (MoveableParticle particle in moveableParticles)
+            {
+                StartCoroutine(Cycle(particle));
+            }
+        }
+       
+        // this.gameObject.SetActive(false);
+     
+    }
+
+
+    private void OnEnable()
     {
         GetParticles();
         foreach (MoveableParticle particle in moveableParticles)
