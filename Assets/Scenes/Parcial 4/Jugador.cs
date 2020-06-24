@@ -11,7 +11,7 @@ public class Jugador : MonoBehaviour
 
     const float gravedad = 9.81f;
 
-    
+
     #region Friccion = u * N;
     public float coeficienteFriccion;
     public float Normal;
@@ -19,23 +19,36 @@ public class Jugador : MonoBehaviour
     #endregion
     // Start is called before the first frame update
 
-   
+
+    Rigidbody2D rb;
+    [SerializeField]
+    float fuerzaSalto;
+    bool puedeSaltar;
     // Update is called once per frame
+
+    private void Start()
+    {
+        rb = this.gameObject.GetComponent<Rigidbody2D>();
+    }
     void Update()
     {
         Aceleracion(fuerza, masa,fuerzaFriccion);
         Debug.Log("Coeficiente Friccion: " + coeficienteFriccion + "FuerzaFriccion: " + fuerzaFriccion);
 
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && puedeSaltar==true)
         {
-            Salto_TiroParabolico(fuerza,90f);
+            Saltar();
+            puedeSaltar = false;
         }
     }
 
     //Deteccion de materiales para sacar los coeficiente
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        if(collision.gameObject.layer == 9)
+        {
+            puedeSaltar = true;
+        }
         if (collision.gameObject.CompareTag("Hielo"))
         {
             coeficienteFriccion = 0.09f;
@@ -66,13 +79,10 @@ public class Jugador : MonoBehaviour
         transform.position += Vector3.right * aceleracionF * Time.deltaTime;
     }
 
-    void Salto_TiroParabolico(float fuerza, float angulo)
+    void Saltar()
     {
-        float multiplicador = 5.0f;
-        float fuerzaSalto = ((fuerza - fuerzaFriccion) * Mathf.Sin(angulo)) * multiplicador;
-        Debug.Log("Fuerza Salto" + fuerzaSalto);
 
-        transform.position += Vector3.up * fuerzaSalto * Time.deltaTime;
+        rb.AddForce(Vector3.up * fuerzaSalto, ForceMode2D.Impulse);
 
     }
 }
